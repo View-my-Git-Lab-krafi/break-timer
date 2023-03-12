@@ -1,3 +1,5 @@
+sudo chmod +x 2stimer.py 6stimer.py main.py run.sh
+./run.sh
 ### First learn about 20-20-20 rule
 
 The 20-20-20 Rule: A Easy Eye Strain Solution
