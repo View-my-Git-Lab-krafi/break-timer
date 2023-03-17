@@ -28,19 +28,22 @@ echo "$$" > "$lock_file"
 
 echo "Starting $script_name"
 while true; do
-    dir=$(dirname "$0")
-        python3 "$dir/2stimer.py"  &&
-    notify-send "===> break-time is working! <===" &&
-    sleep 18m &&
-    notify-send "===========> Break time <==========" &&
-    sleep 9s &&
-    python3 "$dir/2stimer.py"  && 
-    python3 "$dir/6stimer.py"  &&
-    python3 "$dir/6stimer.py" &&
-    python3 "$dir/6stimer.py" &&
-    python3 "$dir/6stimer.py" &&
-    python3 "$dir/6stimer.py" &&
-    python3 "$dir/6stimer.py" 
+dir=$(dirname "$0")
+notify-send "===> Focus <===" &&
+echo "$dir" &&
+python3 "$dir/2stimer.py" "$dir" && 
+touch dir_path 
+echo "$dir">dir_path
+sleep 18m &&
+notify-send "===========> Break time <==========" &&
+sleep 9s &&
+python3 "$dir/2stimer.py" "$dir" && 
+python3 "$dir/6stimer.py" "$dir" &&
+python3 "$dir/6stimer.py" "$dir" &&
+python3 "$dir/6stimer.py" "$dir" &&
+python3 "$dir/6stimer.py" "$dir" &&
+python3 "$dir/6stimer.py" "$dir" &&
+python3 "$dir/6stimer.py" "$dir" 
 done
 
 # Remove the lock file when the script exits
