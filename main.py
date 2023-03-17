@@ -5,7 +5,7 @@ import random
 gi.require_version('Gtk', '3.0')
 from gi.repository import Gtk, GdkPixbuf, Gdk
 
-dir_path = "./ast"
+dir_path = "./break-timer/ast"
 files = os.listdir(dir_path)
 image_files = [f for f in files if f.endswith(".png")]
 
