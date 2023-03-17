@@ -1,5 +1,5 @@
 ```
-cd ~/.local/bin/ && sudo chmod +x 2stimer.py 6stimer.py main.py run.sh && ./run.sh
+cd ~/.local/bin/ && sudo chmod +x 2stimer.py 6stimer.py main.py run-break-timer.sh && ./run-break-timer.sh
 ```
 ### First learn about 20-20-20 rule
 

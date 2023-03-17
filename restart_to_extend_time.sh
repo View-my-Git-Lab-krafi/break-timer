@@ -1,6 +1,6 @@
 #!/bin/bash
 dir=$(dirname "$0")
-pkill -f "$dir/run.sh"
+pkill -f "$dir/run-break-timer.sh"
 #!/bin/bash
 
 script_name=$(basename "$0")
@@ -14,9 +14,8 @@ if [ -f "$lock_file" ]; then
         dir=$(dirname "$0")
         ./dir/run.sh
         notify-send "task killed, Run again"
-        pkill -f "$dir/restart_to_extend_time.sh" 
-        notify-send "task killed, Run again"
         notify-send "Waring! , Its not running anymore"
+        pkill -f "$dir/restart_to_extend_time.sh" 
         exit 0
     else
  
