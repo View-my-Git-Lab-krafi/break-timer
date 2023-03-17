@@ -29,6 +29,7 @@ echo "$$" > "$lock_file"
 echo "Starting $script_name"
 while true; do
     dir=$(dirname "$0")
+        python3 "$dir/2stimer.py"  &&
     notify-send "===> break-time is working! <===" &&
     sleep 18m &&
     notify-send "===========> Break time <==========" &&
