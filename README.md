@@ -1,3 +1,6 @@
+Please note that this project is maintained on GitLab, and you can find the latest version of the code, as well as updates and bug fixes, at 
+https://gitlab.com/krafi/break-timer.git If you encounter any issues while using the application, we encourage you to report them on the GitLab repository so that we can address them as soon as possible.
+
 ```
 cd ~/.local/bin/ && sudo chmod +x 2stimer.py 6stimer.py main.py run-break-timer.sh && ./run-break-timer.sh
 ```
